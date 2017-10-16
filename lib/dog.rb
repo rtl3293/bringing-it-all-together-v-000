@@ -101,10 +101,10 @@ class Dog
     SQL
 
     new_dog = DB[:conn].execute(sql, hash[:name], hash[:breed])
-
+    new_dog.flatten!
     binding.pry
     if !new_dog.empty?
-      dog = new_dog[0]
+      dog = new_dog
       #binding.pry
       self.new_from_db(dog)
     else
