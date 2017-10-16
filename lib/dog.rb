@@ -54,13 +54,15 @@ class Dog
         VALUES (?, ?)
       SQL
 
-      DB[:conn].execute(sql, @name, @breed)
+      new_dog = DB[:conn].execute(sql, @name, @breed)
       sql = <<-SQL
         SELECT last_insert_rowid() FROM dogs
       SQL
       @id =DB[:conn].execute(sql)[0][0]
     end
-    self
+    
   end
+
+  
 
 end
