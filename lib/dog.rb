@@ -112,6 +112,5 @@ class Dog
       dog
     end
 
-    dog = self.new_from_db(new_dog)
   end
 end
