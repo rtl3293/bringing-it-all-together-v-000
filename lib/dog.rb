@@ -63,6 +63,10 @@ class Dog
     self
   end
 
+  def update
+    
+  end
+  
   def self.create(hash)
     new_dog = self.new(hash)
     new_dog.save
@@ -88,7 +92,7 @@ class Dog
     SQL
 
     new_dog = DB[:conn].execute(sql, hash[:name], hash[:breed])
-    
+
     #binding.pry
     if !new_dog == []
       binding.pry
