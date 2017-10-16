@@ -88,6 +88,9 @@ class Dog
     SQL
 
     new_dog = DB[:conn].execute(sql, hash[:name], hash[:breed])[0]
+    binding.pry
+    if new_dog.empty?
+      
     dog = self.new_from_db(new_dog)
   end
 end
