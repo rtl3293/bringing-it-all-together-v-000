@@ -93,7 +93,7 @@ class Dog
       self.new_from_db(new_dog)
     else
       dog = self.create(hash)
-
+      dog
     end
 
     dog = self.new_from_db(new_dog)
