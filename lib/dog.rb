@@ -105,7 +105,7 @@ class Dog
     #binding.pry
     if !new_dog.empty?
       #binding.pry
-      self.new_from_db(dog)
+      self.new_from_db(new_dog)
     else
       dog = self.create(hash)
       dog
