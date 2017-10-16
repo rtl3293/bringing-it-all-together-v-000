@@ -63,7 +63,7 @@ class Dog
     self
   end
 
-  def update(name)
+  def update
     sql = <<-SQL
       UPDATE dogs
       SET name = ?
