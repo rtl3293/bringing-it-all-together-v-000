@@ -87,7 +87,7 @@ class Dog
       WHERE name = ? AND breed = ?
     SQL
 
-    new_dog = DB[:conn].execute(sql, hash[:name], hash[:breed])[0]
+    new_dog = DB[:conn].execute(sql, hash[:name], hash[:breed])
     binding.pry
     if !new_dog.empty?
       self.new_from_db(new_dog)
