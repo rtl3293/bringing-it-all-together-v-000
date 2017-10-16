@@ -64,7 +64,13 @@ class Dog
   end
 
   def update(name)
+    sql = <<-SQL
+      UPDATE dogs
+      SET name = ?
+      WHERE id = ?
+    SQL
 
+    new_dog = DB[:conn].execute(sql)
   end
 
   def self.create(hash)
