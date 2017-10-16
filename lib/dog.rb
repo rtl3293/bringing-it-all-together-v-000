@@ -70,7 +70,7 @@ class Dog
       WHERE id = ?
     SQL
 
-    new_dog = DB[:conn].execute(sql, @name, @id)
+    DB[:conn].execute(sql, @name, @id)
     binding.pry
   end
 
