@@ -63,10 +63,10 @@ class Dog
     self
   end
 
-  def update
-    
+  def update(name)
+
   end
-  
+
   def self.create(hash)
     new_dog = self.new(hash)
     new_dog.save
