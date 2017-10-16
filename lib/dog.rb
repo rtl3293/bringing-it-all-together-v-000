@@ -106,7 +106,7 @@ class Dog
     if !new_dog == []
       dog = new_dog[0]
       binding.pry
-      self.new_from_db()
+      self.new_from_db(dog)
     else
       dog = self.create(hash)
       dog
