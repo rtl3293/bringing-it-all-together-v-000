@@ -102,7 +102,7 @@ class Dog
 
     new_dog = DB[:conn].execute(sql, hash[:name], hash[:breed])
     new_dog.flatten!
-    binding.pry
+    #binding.pry
     if !new_dog.empty?
       #binding.pry
       self.new_from_db(dog)
