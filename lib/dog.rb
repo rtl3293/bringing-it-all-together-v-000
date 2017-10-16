@@ -104,7 +104,7 @@ class Dog
     #binding.pry
     if !new_dog == []
       binding.pry
-      self.new_from_db(new_dog[0])
+      self.new_from_db(new_dog)
     else
       dog = self.create(hash)
       dog
