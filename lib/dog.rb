@@ -102,7 +102,7 @@ class Dog
 
     new_dog = DB[:conn].execute(sql, hash[:name], hash[:breed])
 
-    #binding.pry
+    binding.pry
     if self.find_by_id(new_dog[:id]).isA?(Dog)
       dog = new_dog[0]
       #binding.pry
