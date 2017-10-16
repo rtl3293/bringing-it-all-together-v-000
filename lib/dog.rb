@@ -71,6 +71,7 @@ class Dog
     SQL
 
     new_dog = DB[:conn].execute(sql, @name, @id)
+    binding.pry
   end
 
   def self.create(hash)
