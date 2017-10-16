@@ -92,8 +92,8 @@ class Dog
     if !new_dog.empty?
       self.new_from_db(new_dog)
     else
-      self.create(hash)
-      self
+      dog = self.create(hash)
+      
     end
 
     dog = self.new_from_db(new_dog)
