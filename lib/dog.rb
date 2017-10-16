@@ -81,6 +81,13 @@ class Dog
   end
 
   def self.find_or_create_by(hash)
+    sql = <<-SQL
+      SELECT *
+      FROM dogs
+      WHERE name = ? AND breed = ?
+    SQL
 
+    new_dog = DB[:conn].execute(sql, id)[0]
+    dog = self.new_from_db(new_dog)
   end
 end
