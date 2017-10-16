@@ -31,6 +31,7 @@ class Dog
                :name => row[1],
                :breed => row[2]}
     self.new(new_dog)
+    pry
   end
 
   def self.find_by_name(name)
