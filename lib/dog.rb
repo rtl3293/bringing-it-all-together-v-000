@@ -77,6 +77,6 @@ class Dog
     SQL
 
     new_dog = DB[conn:].execute(sql, id)[0]
-    new_from_array
+    self.new_from_array
 
 end
