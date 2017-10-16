@@ -70,7 +70,7 @@ class Dog
       WHERE id = ?
     SQL
 
-    new_dog = DB[:conn].execute(sql, name, id)
+    new_dog = DB[:conn].execute(sql, @name, @id)
   end
 
   def self.create(hash)
