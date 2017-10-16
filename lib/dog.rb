@@ -71,7 +71,7 @@ class Dog
     SQL
 
     DB[:conn].execute(sql, @name, @id)
-    binding.pry
+    #binding.pry
   end
 
   def self.create(hash)
