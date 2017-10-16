@@ -104,7 +104,6 @@ class Dog
     new_dog.flatten!
     binding.pry
     if !new_dog.empty?
-      dog = new_dog
       #binding.pry
       self.new_from_db(dog)
     else
