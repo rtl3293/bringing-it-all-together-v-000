@@ -88,6 +88,7 @@ class Dog
     SQL
 
     new_dog = DB[:conn].execute(sql, hash[:name], hash[:breed])
+    Array.new(new_dog)
     binding.pry
     if !new_dog == []
       binding.pry
