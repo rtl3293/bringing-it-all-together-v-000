@@ -88,7 +88,7 @@ class Dog
     SQL
 
     new_dog = DB[:conn].execute(sql, hash[:name], hash[:breed])
-    #binding.pry
+    binding.pry
     if !new_dog == []
       binding.pry
       self.new_from_db(new_dog[0])
