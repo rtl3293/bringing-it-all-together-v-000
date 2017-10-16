@@ -80,7 +80,7 @@ class Dog
     dog = self.new_from_db(new_dog)
   end
 
-  def self.find_or_create_by
+  def self.find_or_create_by(hash)
 
   end
 end
